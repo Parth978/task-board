@@ -120,3 +120,13 @@
     @apply bg-background text-foreground;
   }
 }
+
+.dotted-background{
+  background-color: white;
+  background-image: radial-gradient(#4a5568 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+.gradient-title{
+  @apply font-extrabold bg-gradient-to-b from-blue-500 via-blue-100 to-blue-400 bg-clip-text text-transparent;
+}

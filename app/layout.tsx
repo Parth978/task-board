@@ -26,7 +26,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
     >
       <html lang="en" suppressHydrationWarning>
         <head />
-        <body className={inter.className}>
+        <body className={`${inter.className} dotted-background`}>
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
@@ -34,9 +34,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
             disableTransitionOnChange
           >
             <Header />
-            <main className="bg-gray-700">{children}</main>
+            <main className="h-screen">{children}</main>
             <footer className="bg-gray-800 text-white py-12">
-              <div className="container mx-auto px-4 text-center text-gray-200">
+              <div className="container mx-auto px-4 bottom-0 text-center text-gray-200">
                 <p className="text-sm">
                   &copy; {new Date().getFullYear()} My Website. All rights
                   reserved.
